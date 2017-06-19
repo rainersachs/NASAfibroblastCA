@@ -302,7 +302,7 @@ dev.off()
 
 #Confidence intervals (CI) and Monte Carlo (MC) simulations 
 ```{r}
-#MonteCarlo using multivariate gaussian 
+#MonteCarlo using Multivariate Gaussian 
 require(mvtnorm)
 sig = vcov(IDER_model)
 set.seed(10)
