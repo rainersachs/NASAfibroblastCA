@@ -314,7 +314,7 @@ kap_MC = monte_carlo_parameters[, 4]
 kap_MC[kap_MC <= 1e-6] = 1e-5 
 #note because our last parameter were less significant when inputting our variance covariance matrix the parameters had to actually be readjusted to fix for negative value. This is important because if kap parameter went negative our model is nonsensical. (Luckily the fix was only for exactly 15 out of 500 MC samples or only roughly 3%)
 
-#This is a general CI_function where you just get a CI for a specific dose point for any synergy analysis using the monte carlo simulations using vcov().
+#This is a general CI_function where you just get a CI for a specific dose point for any synergy analysis using the Monte Carlo Simulations using vcov().
 CI_function_MIXDER = function(d, d_interested, r, interval = 0.95, L, Z.beta) {
   MIXDER_curve = list(0)
   for (i in 1:500) {
